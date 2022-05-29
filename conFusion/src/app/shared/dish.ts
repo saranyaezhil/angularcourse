@@ -1,4 +1,5 @@
-export interface dish {
+import { Comment } from './comment';
+export interface Dish {
   id: string;
   name: string;
   image: string;
@@ -7,4 +8,5 @@ export interface dish {
   label: string;
   price: string;
   description: string;
+  comments: Comment[];
 }
