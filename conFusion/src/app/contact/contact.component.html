@@ -59,7 +59,9 @@
             placeholder="First Name"
             type="text"
           />
-          <mat-error *ngIf="formErrors.firstname">{{formErrors.firstname}}</mat-error>
+          <mat-error *ngIf="formErrors.firstname">{{
+            formErrors.firstname
+          }}</mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
           <input
@@ -68,7 +70,9 @@
             placeholder="Last Name"
             type="text"
           />
-          <mat-error *ngIf= "formErrors.lastname">{{formErrors.lastname}}</mat-error>
+          <mat-error *ngIf="formErrors.lastname">{{
+            formErrors.lastname
+          }}</mat-error>
         </mat-form-field>
       </p>
       <p>
@@ -77,17 +81,26 @@
             matInput
             formControlName="telnum"
             placeholder="Tel. Number"
-            type="tel"  pattern="[0-9]*" required/>
-          <mat-error *ngIf=" formErrors.telnum"> {{formErrors.telnum}}  </mat-error>
+            type="tel"
+            pattern="[0-9]*"
+            required
+          />
+          <mat-error *ngIf="formErrors.telnum">
+            {{ formErrors.telnum }}
+          </mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
           <input
             matInput
             formControlName="email"
             placeholder="Email"
-            type="email" email required/>
-          <mat-error
-            *ngIf="formErrors.email"> {{formErrors.email}}</mat-error>
+            type="email"
+            email
+            required
+          />
+          <mat-error *ngIf="formErrors.email">
+            {{ formErrors.email }}</mat-error
+          >
         </mat-form-field>
       </p>
       <table class="form-size">
